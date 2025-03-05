@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player with Slider | Swiper JS By Mitanshu</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <div class="album-cover">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- Mata Vaishno devi image  -->
+            <img
+              src="https://wallpapers.com/images/high/vaishno-devi-carving-with-a-gem-bindhi-4gs0inargfx2k0l3.webp" />
+            <div class="overlay">
+              <a
+                href="https://m.youtube.com/watch?v=zkO8HfmRsD0&pp=ygUcbWVyaSBtYWEga2UgYmFyYWJhciBrb2kgbmFoaQ%3D%3D"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- shree krishna image -->
+            <img
+              src="https://www.shyamparivar.com/uploads/gallery/best-shri-krishna-wallpaper-hd.jpg" />
+
+          </div>
+          <div class="swiper-slide">
+            <!-- shree ram image -->
+            <img
+              src="https://w0.peakpx.com/wallpaper/202/932/HD-wallpaper-shree-ram-sun-background-lord-ram-god.jpg" />
+            <div class="overlay">
+              <a
+                href="https://m.youtube.com/watch?v=q5PmN7SuUkY&pp=ygUXbWVyZSBnaGFyIHJhbSBhYXllIGhhaW4%3D"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+<!-- hanuman ji image -->
+
+            <img
+              src="https://media.licdn.com/dms/image/D4D12AQHSMDOPb9YPhg/article-cover_image-shrink_720_1280/0/1684390609012?e=2147483647&v=beta&t=IBa97pBYsaCt7jk1A4xMjTu3vyj5XR0V4hSpTkLb2Ks" />
+            <div class="overlay">
+              <a
+                href="https://m.youtube.com/watch?v=cY4nGCw-JxY&pp=ygUTa2Vlam8ga2VzYXJpIGtlIGxhbA%3D%3D"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Har Har Mahadev -->
+            <img
+              src="https://i.pinimg.com/736x/3f/61/d3/3f61d391f49a3996c1c323fb809f7a95.jpg" />
+            <div class="overlay">
+              <a
+                href="https://m.youtube.com/watch?v=2IlzAP9ibT0&pp=ygUac2hpdiB0YW5kYXYgc3RvdHJhbSBseXJpY3M%3D"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- ganesh ji -->
+            <img
+              src="https://images.unsplash.com/photo-1598090216740-eb040d8c3f82?q=80&w=2464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            <div class="overlay">
+              <a
+                href="https://m.youtube.com/watch?v=Yuex2EnsGiY&pp=ygUaamFpIGdhbmVzaCBqYWkgZ2FuZXNoIGRldmE%3D"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- vishnu bhagwaan  -->
+            <img
+              src="https://w0.peakpx.com/wallpaper/394/1015/HD-wallpaper-dhyan-me-lin-vishnu-bhagwan-vishnu-bhagwan-bhakti.jpg" />
+            <div class="overlay">
+              <a
+                href="https://m.youtube.com/watch?v=Sz5EJa5NM1I&pp=ygUucGF0YSBuYWhpIGtpcyByb29wIG1lIGFha2FyIG5hcmF5YW4gbWlsIGpheWVnYQ%3D%3D"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="music-player">
+      <h1>Title</h1>
+      <p>Song Name</p>
+
+      <audio id="song">
+        <source src="song-list/Luke-Bergs-Gold.mp3" type="audio/mpeg" />
+      </audio>
+
+      <input type="range" value="0" id="progress" />
+
+      <div class="controls">
+        <button class="backward">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button class="play-pause-btn">
+          <i class="fa-solid fa-play" id="controlIcon"></i>
+        </button>
+        <button class="forward">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
